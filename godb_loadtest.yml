@@ -1,0 +1,20 @@
+config:
+  target: "localhost"
+  tcp:
+    port: 6666
+  phases:
+    - arrivalCount: 10
+      duration: 1
+  engines:
+    tcp: {}
+
+scenarios:
+  - name: "Send data"
+    engine: tcp
+    flow:
+      - count: 10
+        loop:
+          - send:
+              payload: "GET 1"
+              encoding: "hex"
+          - think: 1
