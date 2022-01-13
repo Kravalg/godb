@@ -9,7 +9,7 @@ Key value storage for data presented as strings
 
 ## How to run the GoDB
 
-Install the latest (Golang)[https://go.dev/dl/] version 
+Install the latest [Golang](https://go.dev/dl/) version 
 
 Clone repo and build database from source code
 ```
